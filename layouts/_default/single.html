@@ -24,8 +24,8 @@
     {{- if not (.Param "hideMeta") }}
     <div class="post-meta">
       {{- partial "post_meta.html" . -}}
+      {{- partial "edit_post.html" . -}}
       {{/* TODO move to footer */}}
-      {{/* partial "edit_post.html" . */}}
       {{/* partial "post_canonical.html" . */}}
     </div>
     {{- end }}
