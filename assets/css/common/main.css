@@ -193,7 +193,7 @@ pre:hover .copy-code {
 }
 
 .meta-item:not(:last-of-type):after {
-    content: "·";
+    /* content: "·"; */
     margin-inline-start: .5em;
     margin-inline-end: .5em;
 }
@@ -220,6 +220,9 @@ pre:hover .copy-code {
 }
 .meta-item .post-tags a:before {
     content: "#";
+}
+.meta-item .edit-post {
+    margin-inline-start: .3em;
 }
 
 
