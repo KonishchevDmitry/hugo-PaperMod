@@ -41,7 +41,7 @@
       <guid>{{ .Permalink }}</guid>
       <description>{{ with .Description | html }}{{ . }}{{ else }}{{ .Summary | html }}{{ end -}}</description>
       {{- if not site.Params.RSSNoContent}}
-      <content:encoded>{{ (printf "<![CDATA[%s<div><img src=\"https://mc.yandex.ru/watch/96897335\" alt=\"\" /></div>]]>" .Content) | safeHTML }}</content:encoded>
+      <content:encoded>{{ (printf "<![CDATA[%s]]>" .Content) | safeHTML }}</content:encoded>
       {{- end }}
     </item>
     {{- end }}
